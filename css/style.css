@@ -52,9 +52,19 @@ h2{
    text-align: center;
 }
 
+.lista-productos li:nth-child(2n+1){
+   clear: both;
+}
+
 @media (min-width: 768px) {
    .lista-productos li{
       width: 33.33%;
+   }
+   .lista-productos li:nth-child(2n+1){
+      clear: unset;
+   }
+   .lista-productos li:nth-child(3n+1){
+      clear: both;
    }
 }
 
@@ -68,15 +78,27 @@ h2{
 }
 
 .lista-productos li p{
-   font-size: 28px;
+   font-size: 20px;
    font-weight: bold;
-   margin: 10px 0 0 0;
+   margin: 10px 0 20px 0;
 }
 
 .lista-productos li p span{
-
+   font-size: 34px;
+   color: #FEC707;
 }
 
 .boton{
+   padding: 10px 30px;
+   background-color: #FEC707;
+   margin-top: 50px;
+   text-decoration: none;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #801c3;
+   transition: background-color .3s ease-in-out;
+}
 
+.boton:hover{
+   background-color: #CD9F01;
 }
